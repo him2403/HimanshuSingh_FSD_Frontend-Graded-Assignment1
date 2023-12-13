@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pharmacy.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header><h1>Pharmacy</h1></header>
+    <section>
+    <nav class="navigate" id="navigate">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Medicines</a>
+                <ul id="dropdown">
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscles Pain</a></li>
+                    <li><a href="#">Cold & Cough</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Health Care</a>
+            <ul id="dropdown">
+                <li><a href="#">Baby Care</a></li>
+                <li><a href="#">Skin Care</a></li>
+                <li><a href="#">Home Care</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Pet Care</a></li>
+            </ul></li>
+            <li><a href="./labtestform.html">Lab Test</a></li>
+        </ul>
+    </nav>
+</section>
+    <div class="animation-container">
+        <div class="image-container">
+            <img src="./Images/Animation/ani1.jpg" alt="Image 1">
+            <img src="./Images/Animation/ani2.png" alt="Image 2">
+            <img src="./Images/Animation/ani3.jpg" alt="Image 3">
+            <img src="./Images/Animation/ani4.jpg" alt="Image 4">
+            <img src="./Images/Animation/ani5.jpg" alt="Image 5">
+            
+        </div>
+    </div>
+<section>
+    <h2>Covid Care</h2>
+        <div class="products-section">
+            <div class="product">
+                <h3>Covid Test Kit</h3>
+                <img src="./Images/Products/c1.jpg" alt="Covid Product 1">
+                <div>
+                    <p>Price: ₹ 40</p>
+                    <p>Price after Offer : ₹ 30</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="product">
+                <h3>Covid Essentials</h3>
+                <img src="./Images/Products/c2.jpg" alt="Covid Product 2">
+                <div>
+                <p>Price: ₹ 240</p>
+                <p>Price after Offer: ₹ 170</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+            <div class="product">
+                <h3>Sanitizer Bottle</h3>
+                <img src="./Images/Products/c3.jpg" alt="Covid Product 2">
+                
+                <p>Price: ₹ 99</p>
+                <p>Price after Offer: ₹ 87</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Mask</h3>
+                <img src="./Images/Products/c4.jpg" alt="Covid Product 2">
+                
+                <p>Price: ₹ 45</p>
+                <p>Price after Offer: ₹ 30</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Diabetes Care</h2>
+        <div class="products-section">
+            <div class="product">
+                <h3>Powder</h3>
+                <img src="./Images/Products/d1.jpg" alt="Diabetes Product 1">
+                
+                <p>Price: ₹ 45</p>
+                <p>Price after Offer: ₹ 30</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Chyawanprash</h3>
+                <img src="./Images/Products/d2.jpg" alt="Diabetes Product 1">
+                
+                <p>Price: ₹ 45</p>
+                <p>Price after Offer: ₹ 30</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Tooth Paste</h3>
+                <img src="./Images/Products/d3.jpg" alt="Diabetes Product 1">
+                
+                <p>Price: ₹ 45</p>
+                <p>Price after Offer: ₹ 30</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <div class="product">
+                <h3>Biscuits</h3>
+                <img src="./Images/Products/d4.png" alt="Diabetes Product 2">
+                
+                <p>Price: ₹ 35</p>
+                <p>Price after Offer: ₹ 30</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+        <script>
+            function addToCart(button) {
+                button.style.backgroundColor = 'rgb(250, 234, 230)';
+                button.style.borderColor = 'rgb(0, 255, 76)';
+            }
+        </script>
+
+
+    
+
+    <footer>@copyright. Only for demonstration purposes</footer>
+</body>
+    
+
+</html>

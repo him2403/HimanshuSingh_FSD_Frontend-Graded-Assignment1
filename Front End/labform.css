@@ -1,0 +1,191 @@
+body {
+    height: auto;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+     display: block;
+    background-color: rgb(0, 0, 0, 1);
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    color: white;
+    
+}
+
+.navigate {
+    position: fixed;
+    top: 57px;
+    z-index: 1000; 
+    width: 100%;
+}
+
+.menu {
+    background-color: rgb(0, 0, 0, 0.9);
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li:hover {
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.menu li:nth-child(2):hover #dropdown,
+.menu li:nth-child(3):hover #dropdown {
+    display: block;
+}
+
+#dropdown li {
+    display: block;
+}
+
+#dropdown {
+    position: absolute;
+    display: none;
+    background-color: whitesmoke;
+    padding: 0px;
+    max-width: 150px;
+    top: 43px;
+}
+
+#dropdown li:hover {
+    background-color: gainsboro;
+}
+
+#dropdown li a {
+    color: steelblue;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    flex: 1;
+    margin-right: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin-top: 90px;
+    margin-left: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    flex: 1;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.test-types {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.test-types label {
+    margin-right: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #ddd;
+    color: black;
+    margin-right: 10px;
+}
+
+button:hover,
+button[type="reset"]:hover {
+    background-color: #ccc;
+}
+
+.fixed-image {
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    right: 110px;
+    z-index: -1;
+}
+
+.fixed-image img {
+    height: 100%;
+    width: 100%; 
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side {
+        margin-right: 0;
+    }
+
+    .fixed-image {
+        position: relative;
+        height: auto;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .fixed-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

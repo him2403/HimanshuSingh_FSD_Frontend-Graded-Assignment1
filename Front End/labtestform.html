@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./labform.css">
+    <title>Lab Test Form</title>
+</head>
+<body>
+    <header><h1>Pharmacy</h1></header>
+    <section>
+    <nav class="navigate" id="navigate">
+        <ul class="menu">
+            <li><a href="./pharmacy.html">Home</a></li>
+            <li><a href="#">Our Medicines</a>
+                <ul id="dropdown">
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscles Pain</a></li>
+                    <li><a href="#">Cold & Cough</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Health Care</a>
+            <ul id="dropdown">
+                <li><a href="#">Baby Care</a></li>
+                <li><a href="#">Skin Care</a></li>
+                <li><a href="#">Home Care</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Pet Care</a></li>
+            </ul></li>
+            <li><a href="./labtestform.html">Lab Test</a></li>
+        </ul>
+    </nav>
+</section>
+<div class="container">
+    <div class="left-side">
+        <form id="Lab Test Form" action="" method="">
+            <h2>Lab Test Form</h2>
+            <h3>Contact Details</h3>
+            <div class="form-group">
+               
+         
+                <input type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name" required>
+     
+                
+                <input type="text" id="patientId" name="patientId" placeholder="Patient Id (if exists)">
+            </div>
+    
+            <div class="form-group">
+               
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number" required>
+                <input type="email" id="email" name="email" placeholder="Enter email id" required>
+            </div>
+    
+            <h3>Address</h3>
+    
+            <div class="form-group">
+                
+                <input type="text" id="houseNumber" name="houseNumber" placeholder="H.No." required>
+           
+               
+                <input type="text" id="street" name="street" placeholder="Street" required>
+            </div>
+    
+            <div class="form-group">
+              
+                <input type="text" id="area" name="area" placeholder="Area/City" required>
+                <input type="text" id="pin" name ="pin" placeholder="Pincode" required>
+            </div>
+    
+            <div class="form-group">
+               
+                <select id="district" name="district" required>
+                    <option value="" disabled selected>Choose</option>
+                    <!-- Add more district options as needed -->
+                    <option value="mumbaicity">Mumbai City</option>
+                    <option value="mumbaisub">Mumbai Suburban</option>
+                    <option value="thane">Thane</option>
+                    <option value="raigad">Raigad</option>
+                    <option value="palghar">Palghar</option>
+                    <option value="ratnagiri">Ratnagiri</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label>Choose the Test Type:(Check atleast one box without fail)
+                </label>
+                <div class="test-types">
+                    <label><input type="checkbox" name="testType" value="CBC"> CBC</label>
+                    <label><input type="checkbox" name="testType" value="CompleteUrine"> Complete Urine</label>
+                    <label><input type="checkbox" name="testType" value="LipidProfile"> Lipid Profile</label>
+                    <label><input type="checkbox" name="testType" value="TSH"> Thyroid Stimulating Hormone (TSH)</label>
+                    <label><input type="checkbox" name="testType" value="GlucoseTest"> Glucose Test</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label>Do you want a hard copy of the report?</label>
+                <label><input type="radio" name="hardCopy" value="Yes"> Yes</label>
+                <label><input type="radio" name="hardCopy" value="No"> No</label>
+            </div>
+    
+            <div class="form-group">
+                <label for="date">Select Your Comfortable Date and Time:</label>
+                <input type="date" id="date" name="date" required>
+                <input type="time" id="time" name="time" required>
+            </div>
+    
+            <div class="form-group">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <div class="fixed-image">
+       
+        <img src="./Images/Lab-Test/lab-test.jpg" alt="Fixed Image">
+    </div>
+</div>
+</body>
+</html>
