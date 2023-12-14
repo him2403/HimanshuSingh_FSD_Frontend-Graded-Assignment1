@@ -79,10 +79,13 @@ body {
 
 .image-container {
     display: flex;
-    animation: slideImages 10s linear infinite;
+    width: 300%;
+   animation: slideImages 15s linear infinite;
+    
 }
 
 .image-container img {
+    flex: 1;
     width: 100%;
     height: auto;
     margin: 0;
@@ -91,10 +94,10 @@ body {
 
 @keyframes slideImages {
     0% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-275%);
     }
 }
 
@@ -109,8 +112,7 @@ h2{
     width: 290px;
     height: 300px;
     display: inline-block;
-    
-    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+     transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 .product img{
     border-radius: 10px;
